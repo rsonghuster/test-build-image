@@ -45,6 +45,8 @@ COPY --from=0 /code/app.py app.py
 
 ENV USER root
 
+VOLUME ["/data1"]
+
 EXPOSE 9000
 
 ENTRYPOINT [ "python", "-u", "app.py" ]
